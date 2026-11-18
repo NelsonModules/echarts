@@ -1,0 +1,31 @@
+{
+  "module": "echarts",
+  "title": "echarts",
+  "version": "1.0.0",
+  "author": "Allan CORNET",
+  "summary": "Interactive Apache ECharts charts for Nelson: 30+ chart types (bar, line, area, scatter, pie, radar, heatmap, calendar, boxplot, candlestick, sankey, graph, tree, treemap, sunburst, funnel, gauge, parallel, themeRiver, choropleth map, wordcloud, ...), offline rendering, HTML/PNG/SVG export, zoom, data labels, mark lines and click callbacks.",
+  "description": "Interactive charts for Nelson powered by Apache ECharts: a faithful, object-oriented binding that renders live charts in the WebView/WebAssembly desktop and exports self-contained HTML everywhere else.",
+  "license": "LGPL-3.0-or-later",
+  "copyright": "Copyright (c) 2016-present Allan CORNET",
+  "builtin": false,
+  "platforms": "all",
+  "nelson": ">=2.0.0",
+  "dependencies": {},
+  "keywords": [
+    "nelson",
+    "nelson-lang",
+    "echarts",
+    "apache-echarts",
+    "charts",
+    "visualization",
+    "plot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NelsonModules/echarts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NelsonModules/echarts/issues"
+  },
+  "homepage": "https://github.com/NelsonModules/echarts"
+}

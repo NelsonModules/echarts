@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>echarts.tree</keyword>
+  <short_description>cree un diagramme en arbre.</short_description>
+  <syntax>
+    <syntax_item>c = echarts.tree(root)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>root</param_name>
+      <param_description>une structure avec un champ 'name' et un champ optionnel 'children' (tableau de cellules de sous-structures).</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>c</param_name>
+      <param_description>un objet echarts.chart.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>Cree un diagramme en arbre a partir d'une structure imbriquee.</p>
+  </description>
+  <used_function />
+  <bibliography>https://echarts.apache.org/en/option.html</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description />
+      <example_item_data><![CDATA[root = struct('name', 'root', 'children', {{struct('name','a'), struct('name','b')}});
+echarts.tree(root).show();]]></example_item_data>
+      <example_item_img src="../../images/echarts_tree.png" align="middle" />
+    </example_item>
+  </examples>
+  <see_also>
+      <see_also_item>
+        <link linkend="${echarts}echarts.treemap">echarts.treemap</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.sunburst">echarts.sunburst</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.graph">echarts.graph</link>
+      </see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

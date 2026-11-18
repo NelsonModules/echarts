@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>echarts.hist</keyword>
+  <short_description>create a histogram.</short_description>
+  <syntax>
+    <syntax_item>c = echarts.hist(x)</syntax_item>
+    <syntax_item>c = echarts.hist(x, nbins)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>x</param_name>
+      <param_description>the data vector.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>nbins</param_name>
+      <param_description>the number of equal-width bins (default 10).</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>c</param_name>
+      <param_description>an echarts.chart object.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>Create a histogram of the data vector x. The bars touch, and each label is a bin center.</p>
+  </description>
+  <used_function />
+  <bibliography>https://echarts.apache.org/en/option.html</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description />
+      <example_item_data><![CDATA[echarts.hist(randn(1, 1000), 20).title('Normal sample').show();]]></example_item_data>
+      <example_item_img src="../../images/echarts_hist.png" align="middle" />
+    </example_item>
+  </examples>
+  <see_also>
+      <see_also_item>
+        <link linkend="${echarts}echarts.bar">echarts.bar</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.boxplot">echarts.boxplot</link>
+      </see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <module_name>echarts</module_name>
+  <chapter>echarts</chapter>
+  <chapter_description>
+    <p>Interactive charts for Nelson powered by Apache ECharts.</p>
+  </chapter_description>
+</xmldoc>

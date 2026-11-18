@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>echarts.scatter3D</keyword>
+  <short_description>create a 3D scatter chart (echarts-gl).</short_description>
+  <syntax>
+    <syntax_item>c = echarts.scatter3D(x, y, z)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>x, y, z</param_name>
+      <param_description>vectors of the same length.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>c</param_name>
+      <param_description>an echarts.chart object.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>Create a 3D scatter chart (uses the bundled echarts-gl extension); points are colored by z and the scene rotates.</p>
+  </description>
+  <used_function />
+  <bibliography>https://echarts.apache.org/en/option.html</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description />
+      <example_item_data><![CDATA[t = linspace(0, 6*pi, 300);
+echarts.scatter3D(cos(t).*t, sin(t).*t, t).show();]]></example_item_data>
+      <example_item_img src="../../images/echarts_scatter3D.png" align="middle" />
+    </example_item>
+  </examples>
+  <see_also>
+      <see_also_item>
+        <link linkend="${echarts}echarts.surface">echarts.surface</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.bar3D">echarts.bar3D</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.line3D">echarts.line3D</link>
+      </see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

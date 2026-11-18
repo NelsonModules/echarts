@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>echarts.surface</keyword>
+  <short_description>cree une surface 3D (echarts-gl).</short_description>
+  <syntax>
+    <syntax_item>c = echarts.surface(Z)</syntax_item>
+    <syntax_item>c = echarts.surface(X, Y, Z)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>Z</param_name>
+      <param_description>une matrice de hauteurs sur une grille entiere implicite.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>X, Y, Z</param_name>
+      <param_description>des matrices de meme taille, comme produites par meshgrid.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>c</param_name>
+      <param_description>un objet echarts.chart.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>Cree une surface 3D (utilise l'extension echarts-gl embarquee), coloree par hauteur et que l'on peut faire tourner.</p>
+  </description>
+  <used_function />
+  <bibliography>https://echarts.apache.org/en/option.html</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description />
+      <example_item_data><![CDATA[[X, Y] = meshgrid(linspace(-3, 3, 40));
+Z = sin(X) .* cos(Y);
+echarts.surface(X, Y, Z).show();]]></example_item_data>
+      <example_item_img src="../../images/echarts_surface.png" align="middle" />
+    </example_item>
+  </examples>
+  <see_also>
+      <see_also_item>
+        <link linkend="${echarts}echarts.scatter3D">echarts.scatter3D</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.bar3D">echarts.bar3D</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.line3D">echarts.line3D</link>
+      </see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

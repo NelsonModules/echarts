@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>echarts.sankey</keyword>
+  <short_description>create a Sankey flow diagram.</short_description>
+  <syntax>
+    <syntax_item>c = echarts.sankey(sources, targets, values)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>sources</param_name>
+      <param_description>a cell array of source node names (one per link).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>targets</param_name>
+      <param_description>the target node names.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>values</param_name>
+      <param_description>the flow magnitudes.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>c</param_name>
+      <param_description>an echarts.chart object.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>Create a Sankey flow diagram from a list of links. The node set is the union of all names used.</p>
+  </description>
+  <used_function />
+  <bibliography>https://echarts.apache.org/en/option.html</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description />
+      <example_item_data><![CDATA[echarts.sankey({'A','A','B'}, {'B','C','D'}, [5 3 5]).show();]]></example_item_data>
+      <example_item_img src="../../images/echarts_sankey.png" align="middle" />
+    </example_item>
+  </examples>
+  <see_also>
+      <see_also_item>
+        <link linkend="${echarts}echarts.graph">echarts.graph</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.treemap">echarts.treemap</link>
+      </see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

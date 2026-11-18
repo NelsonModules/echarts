@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>echarts.bar</keyword>
+  <short_description>create a bar chart.</short_description>
+  <syntax>
+    <syntax_item>c = echarts.bar(Y)</syntax_item>
+    <syntax_item>c = echarts.bar(labels, Y)</syntax_item>
+    <syntax_item>c = echarts.bar(..., 'Names', C, 'Title', T)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>labels</param_name>
+      <param_description>category labels: a cell array of char or a numeric vector. Optional; defaults to 1..n.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>Y</param_name>
+      <param_description>the data: a vector (one series) or a matrix (one series per column).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Names', C</param_name>
+      <param_description>a cell array of series names.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Title', T</param_name>
+      <param_description>the chart title.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>c</param_name>
+      <param_description>an echarts.chart object.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>Create a bar chart. Each column of Y is a series sharing the category labels.</p>
+  </description>
+  <used_function />
+  <bibliography>https://echarts.apache.org/en/option.html</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description />
+      <example_item_data><![CDATA[c = echarts.bar({'Q1','Q2','Q3','Q4'}, [12 19 7 15]);
+c.title('Quarterly revenue');
+c.show();]]></example_item_data>
+      <example_item_img src="../../images/echarts_bar.png" align="middle" />
+    </example_item>
+  </examples>
+  <see_also>
+      <see_also_item>
+        <link linkend="${echarts}echarts.line">echarts.line</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.pie">echarts.pie</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.scatter">echarts.scatter</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.chart">echarts.chart</link>
+      </see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>echarts.colormap</keyword>
+  <short_description>named continuous colormap stops.</short_description>
+  <syntax>
+    <syntax_item>stops = echarts.colormap(name)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>name</param_name>
+      <param_description>'viridis' (default), 'plasma', 'inferno', 'jet', 'turbo', 'spectral', 'blues', 'reds', 'greens', 'rdylbu'.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>c</param_name>
+      <param_description>a cell array of hex color stops.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>Return a cell array of hex color stops for a continuous colormap, ready to pass to a visual map.</p>
+  </description>
+  <used_function />
+  <bibliography>https://echarts.apache.org/en/option.html</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description />
+      <example_item_data><![CDATA[c = echarts.heatmap(magic(8));
+c.visualMap(1, 64, 'inRange', struct('color', {echarts.colormap('turbo')})).show();]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+      <see_also_item>
+        <link linkend="${echarts}echarts.palette">echarts.palette</link>
+      </see_also_item>
+      <see_also_item>
+        <link linkend="${echarts}echarts.heatmap">echarts.heatmap</link>
+      </see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

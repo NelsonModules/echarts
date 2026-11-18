@@ -1,0 +1,9 @@
+echarts-wordcloud is licensed under the ISC license.
+
+Copyright (c) the echarts-wordcloud contributors (ecomfe).
+Project: https://github.com/ecomfe/echarts-wordcloud
+
+echarts-wordcloud builds on wordcloud2.js by Tim Chien, which is MIT licensed
+(https://github.com/timdream/wordcloud2.js).
+
+For the full, authoritative license text, see the upstream repository above.

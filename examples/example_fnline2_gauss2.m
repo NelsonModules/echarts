@@ -1,0 +1,13 @@
+%=============================================================================
+% Copyright (c) 2016-present Allan CORNET (Nelson)
+%=============================================================================
+% This file is part of the echarts module for Nelson.
+%=============================================================================
+% LICENCE_BLOCK_BEGIN
+% SPDX-License-Identifier: LGPL-3.0-or-later
+% LICENCE_BLOCK_END
+%=============================================================================
+% Line plot of double gaussian.
+x = linspace(0, 4*pi, 300);
+echarts.plot(x, exp(-(x-3).^2) + 0.6*exp(-(x-9).^2), 'Names', {'Double Gaussian'}).title('Double Gaussian').show();
+%=============================================================================
